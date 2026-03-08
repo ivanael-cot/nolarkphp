@@ -19,7 +19,17 @@
         <?php
         include('../includes/header.html.inc.php');
         ?>
-        
+        <nav>
+        <ul>
+            <li><a href="../index.php">Accueil</a></li>
+            <li><a href="route.php">Route</a></li>
+            <li><a href="cross.php">Cross</a></li>
+            <li><a href="piste.php">Piste</a></li>
+            <li><a href="enfants.php">Enfants</a></li>
+            <li><a href="nous-contacter.php">Nous contacter</a></li>
+        </ul>
+        </nav>
+    </header>
         
         <?php 
         include ("../includes/footer.inc.php");

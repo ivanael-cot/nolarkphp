@@ -19,6 +19,17 @@
         <?php
         include('includes/header.html.inc.php');
         ?>
+        <nav>
+        <ul>
+            <li><a href="/index.php">Accueil</a></li>
+            <li><a href="pages/route.php">Route</a></li>
+            <li><a href="pages/cross.php">Cross</a></li>
+            <li><a href="pages/piste.php">Piste</a></li>
+            <li><a href="pages/enfants.php">Enfants</a></li>
+            <li><a href="pages/nous-contacter.php">Nous contacter</a></li>
+        </ul>
+    </nav>
+    </header>
         <section id="principal">
             <article>
                 <img src="images/post-it.png" alt="Post-It : Penser à rentrer en vie">
