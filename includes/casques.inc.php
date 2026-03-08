@@ -4,7 +4,7 @@
 $cnx = new PDO('mysql:host=127.0.0.1;port=8889;dbname=nolark', 'nolarkuser', 'nolarkpwd');
 // le champ "nom" n'est pas utilisé dans l'affichage ; on peut l'omettre
 // cela évite les problèmes de colonnes ambiguës/absentes
-$req = 'SELECT casque.id, casque.nom, casque.modele, casque.type, casque.prix, casque.classement, casque.image, casque.stock';
+$req = 'SELECT casque.id, nom, casque.modele, libelle, casque.prix, casque.classement, casque.image, casque.stock';
 $req .= ' FROM casque INNER JOIN type ON casque.type=type.id';
 $req .= ' INNER JOIN marque ON casque.marque=marque.id';
 $res = $cnx->query($req);
