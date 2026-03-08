@@ -1,4 +1,3 @@
-$php
 <?php
 // la connexion PDO doit indiquer le port utilisé par MySQL sous MAMP (souvent 8889)
 // et gérer proprement les erreurs pour éviter le fatal error "Connection refused".
@@ -9,7 +8,9 @@ try {
 } catch (PDOException $e) {
 	die('Erreur de connexion à la base de données : ' . $e->getMessage());
 }
-$req = 'SELECT casque.id, nom, modele, libelle, prix, classement, image, stock';
+// retirer le champ ambigu ou le qualifier si nécessaire
+// 'nom' existe dans plusieurs tables, évitons l'ambiguïté
+$req = 'SELECT casque.id, casque.nom AS casque_nom, modele, libelle, prix, classement, image, stock';
 $req .= ' FROM casque INNER JOIN type ON casque.type=type.id';
 $req .= ' INNER JOIN marque ON casque.marque=marque.id';
 $res = $cnx->query($req);
