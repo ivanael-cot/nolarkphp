@@ -14,4 +14,4 @@ coucher de soleil avec une femme embrassant un homme réalisant en stoppie sur s
 moto.">
 <!--Image basée sur la création originale de ShiftGraphiX sur Pixabay :
 https://pixabay.com/fr/couple-stoppie-sportive-vélomoteur-3156613/ -->
-</picture>
+</picture>';
