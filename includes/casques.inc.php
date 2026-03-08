@@ -8,9 +8,9 @@ try {
 } catch (PDOException $e) {
 	die('Erreur de connexion à la base de données : ' . $e->getMessage());
 }
-// retirer le champ ambigu ou le qualifier si nécessaire
-// 'nom' existe dans plusieurs tables, évitons l'ambiguïté
-$req = 'SELECT casque.id, casque.nom AS casque_nom, modele, libelle, prix, classement, image, stock';
+// le champ "nom" n'est pas utilisé dans l'affichage ; on peut l'omettre
+// cela évite les problèmes de colonnes ambiguës/absentes
+$req = 'SELECT casque.id, modele, libelle, prix, classement, image, stock';
 $req .= ' FROM casque INNER JOIN type ON casque.type=type.id';
 $req .= ' INNER JOIN marque ON casque.marque=marque.id';
 $res = $cnx->query($req);
