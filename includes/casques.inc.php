@@ -1,7 +1,7 @@
 <?php
 // la connexion PDO doit indiquer le port utilisé par MySQL sous MAMP (souvent 8889)
 // et gérer proprement les erreurs pour éviter le fatal error "Connection refused".
-$cnx = new PDO('mysql:host=127.0.0.1;port=8888;dbname=nolark', 'nolarkuser', 'nolarkpwd');
+$cnx = new PDO('mysql:host=127.0.0.1;port=8889;dbname=nolark', 'nolarkuser', 'nolarkpwd');
 // le champ "nom" n'est pas utilisé dans l'affichage ; on peut l'omettre
 // cela évite les problèmes de colonnes ambiguës/absentes
 $req = 'SELECT casque.id, modele, libelle, prix, classement, image, stock';
