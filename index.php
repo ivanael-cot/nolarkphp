@@ -30,7 +30,7 @@ https://pixabay.com/fr/couple-stoppie-sportive-vélomoteur-3156613/ -->
         </picture>
         <nav>
             <ul>
-                <li><a href="/index.php">Accueil</a></li>
+                <li><a href="index.php">Accueil</a></li>
                 <li><a href="pages/route.php">Route</a></li>
                 <li><a href="pages/cross.php">Cross</a></li>
                 <li><a href="pages/piste.php">Piste</a></li>
